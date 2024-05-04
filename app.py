@@ -8,7 +8,7 @@ from model import UNet
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/predict', methods=['GET', 'POST'])
 def index():
     original_img = None  # Đường dẫn tới ảnh gốc
     predicted_img = None  # Đường dẫn tới ảnh dự đoán
